@@ -18,12 +18,12 @@ export const COMPANY_BASIC_INFORMATION = {
 	/**
 	 * The name of the company.
 	 */
-	NAME: 'CompanyName',
+	NAME: 'HealthTechStack',
 
 	/**
 	 * The legal name of the company. If no legal name is available, use the name of the company.
 	 */
-	LEGAL_NAME: 'Company Name LLC',
+	LEGAL_NAME: 'Go Lungo LTD',
 
 	/**
 	 * The OTHER_INFO_TEXT will only be shown in the imprint. It can be used to show additional information, e.g. the VAT-ID of your business. It is an array of strings, where each string will be shown as a separate line.
@@ -33,22 +33,22 @@ export const COMPANY_BASIC_INFORMATION = {
 	/**
 	 * The address of the company. Leave as '' if you do not want to display an address.
 	 */
-	ADDRESS: 'Example Street 123, 12345 Example City, Example Country',
+	ADDRESS: ' ',
 
 	/**
 	 * The URL of the company's website.
 	 */
-	URL: 'https://SOME_URL.com',
+	URL: 'https://healthtechstack.com',
 
 	/**
 	 * The support email of the company.
 	 */
-	SUPPORT_EMAIL: 'support@SOME_URL.com',
+	SUPPORT_EMAIL: 'a@healthtechstack.com',
 
 	/**
 	 * The support phone number of the company. (This is needed in certain countries for the imprint.)
 	 */
-	SUPPORT_PHONE: '+1 234 567 890',
+	SUPPORT_PHONE: ' ',
 
 	/**
 	 * The founding year of the company. For auto-updating the age of the company in the footer.
@@ -58,12 +58,12 @@ export const COMPANY_BASIC_INFORMATION = {
 	/**
 	 * The URL of the parent company's website. If you have a holding or a personal portfolio website, you can link it here.
 	 */
-	PARENT_COMPANY_URL: 'https://SOME_ORTHER_URL.com',
+	PARENT_COMPANY_URL: ' ',
 
 	/**
 	 * The name of the responsible person for the website. This is the person who is responsible for the content of the website, e.g. for the Cookie Policy.
 	 */
-	RESPONSIBLE_PERSON: 'YOUR NAME',
+	RESPONSIBLE_PERSON: ' ',
 };
 
 /**
@@ -73,23 +73,31 @@ export const COMPANY_MARKETING_INFORMATION = {
 	/**
 	 * The meta title for the resource directory. Maximum 60-70 characters.
 	 */
-	META_TITLE: 'A resource directory for ABCs and XYZs',
+	META_TITLE: 'Top Health Tech Apps & Tools for Wellness and Health Tracking',
 
 	/**
 	 * The meta description for the resource directory. Maximum 160 characters.
 	 */
-	META_DESCRIPTION: 'Find the best tools and resources for your ABC journey.',
+	META_DESCRIPTION: 'Explore the best health tech wearables, diagnostics, mental wellness, and fitness tools to support your health journey.',
 
 	/**
 	 * The meta keywords for the resource directory. Max 10 keywords.
 	 */
-	META_KEYWORDS: ['some', 'keywords', 'your', 'target audience', 'googles'],
+	META_KEYWORDS: [
+		'health tech',
+		'wearables',
+		'diagnostics',
+		'mental health',
+		'fitness tracking',
+		'telemedicine',
+		'sleep optimization',
+		'nutrition apps',
+		'dna analysis',
+		'wellness tools'
+	],
 
 	/**
 	 * The social links for the resource directory.
-	 * You'll need at least a Twitter / X Account because of meta data sharing.
-	 * The Twitter / X account needs to be the first in the array.
-	 * If you need more ICONS add to /app/_compontents/ui/Icons.ts. * Alternatively, you can use Lucide Icons.
 	 */
 	SOCIAL_LINKS: [
 		{
@@ -115,7 +123,6 @@ export const COMPANY_MARKETING_INFORMATION = {
 		},
 	],
 };
-
 /**
  * Bot User Id
  * Create a new user in the database without login and add the UUID here. All automated activity will be assigned to this user.

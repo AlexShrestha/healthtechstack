@@ -8,7 +8,7 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"typegen": "npx supabase gen types typescript --project-id 'YOUR_SUPABASE_PROJECT_ID' --schema public > app/_types/supabase.ts"
+		"typegen": "npx supabase gen types typescript --project-id ijsztzpbyxuwqbttueaz --schema public > app/_types/supabase.ts"
 	},
 	"dependencies": {
 		"@headlessui/react": "^1.7.18",
