@@ -128,7 +128,7 @@ export const COMPANY_MARKETING_INFORMATION = {
  * Create a new user in the database without login and add the UUID here. All automated activity will be assigned to this user.
  */
 
-export const BOT_USER_ID = 'ca9bbb56-cf0d-422a-91c2-a95c381a76e9ca9bbb56-cf0d-422a-91c2-a95c381a76e9';
+export const BOT_USER_ID = 'ca9bbb56-cf0d-422a-91c2-a95c381a76e9';
 
 /**
  * The data for the promotions.
