@@ -227,33 +227,32 @@ export const GENERAL_SETTINGS = {
 // Let AI know what your listings and sublistings are about. This will help the AI to generate better content for your listings and sublistings.
 
 export const LISTINGS_SETTINGS = {
-	singularName: 'Listing',
-	pluralName: 'Listings',
+	singularName: 'Health Tool',
+	pluralName: 'Health Tools',
 	explanationForAiContentCreation:
-		'This type of listing provides detailed information about one XYZ.',
+		'This type of listing provides detailed information about a health-related tool, such as a device, app, or service that supports user well-being and longevity.',
 };
 
 export const SUBLISTINGS_SETTINGS = {
 	singularName: 'Product',
 	pluralName: 'Products',
 	explanationForAiContentCreation:
-		'This type of listing provides detailed information about a product for example: XYZ.',
+		'This type of listing provides detailed information about a specific health product, such as a wearable, supplement, or diagnostic kit aimed at improving health and longevity.',
 };
 
 /* *
- * Next, you will find module specific settings. They are used within multiple components and pages. To have a consistent look and feel, they have been moved to this file.
- * You can leave them as is or change them to your liking.
- * ! Do not change the structure of the objects. Only change the values.
+ * Module-specific settings for consistent look and feel across the directory.
+ * Only change the values, not the structure of the objects.
  * */
 
 // HERO
 
-export const HERO_TITLE = 'All Things ABC.';
-export const HERO_SLOGAN = 'The ultimate resource directory for XYZ.';
+export const HERO_TITLE = 'Your Guide to Health and Longevity.';
+export const HERO_SLOGAN = 'Explore the best tools, products, and resources for optimized health and well-being.';
 
 // FOOTER
 
-// What is the name of the creator of the website?
+// Creator's name
 
 export const CREATOR_INFORMATION = {
 	/**
@@ -275,7 +274,7 @@ export const FOOTER_DISCLAIMERS = [
 
 // What is the slogan you want to show in the Footer?
 
-export const FOOTER_SLOGAN = 'The ultimate resource directory for XYZs';
+export const FOOTER_SLOGAN = 'The ultimate resource directory for health and longevity tools.';
 
 // What are the external links you want to show in the Footer? (e.g. to your other projects)
 
