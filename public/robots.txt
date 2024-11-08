@@ -1,0 +1,23 @@
+User-agent: *
+# Allow all user agents to crawl the site
+
+# Disallow common non-public directories:
+Disallow: /admin/
+Disallow: /secret-admin/
+Disallow: /account/
+Disallow: /login/
+Disallow: /signup/
+Disallow: /api/
+
+# Disallow sensitive pages
+Disallow: /reset-password/
+Disallow: /forgot-password/
+
+# Allow full indexing of main site content:
+Allow: /blog/
+Allow: /directory/
+Allow: /products/
+Allow: /services/
+
+# Sitemap URL
+Sitemap: https://healthtechstack.com/sitemap.xml
