@@ -1,0 +1,107 @@
+[33mcommit c56917557f676bca2a70e5105b49127646863883[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: AlexShrestha <alex.shrestha88@gmail.com>
+Date:   Fri Nov 8 13:37:08 2024 +0000
+
+    Update Tailwind configuration and disable dark mode
+
+[33mcommit 902cb8fb4ebe8c4d25fc550844938946ea688797[m
+Author: AlexShrestha <alex.shrestha88@gmail.com>
+Date:   Fri Nov 8 12:05:11 2024 +0000
+
+    Add robots.txt to public directory
+
+[33mcommit 7ff1146cd2591f5b7d23e2f2f8bc67280da4f5d9[m
+Author: AlexShrestha <alex.shrestha88@gmail.com>
+Date:   Thu Nov 7 23:31:44 2024 +0000
+
+    Update Tailwind theme and colors
+
+[33mcommit 8bc7b642369e5efc3fc93ff621a2c65a27fcb7c7[m
+Author: AlexShrestha <alex.shrestha88@gmail.com>
+Date:   Thu Nov 7 23:28:07 2024 +0000
+
+    Update Tailwind theme and colors
+
+[33mcommit 53811c85de764492907a5c18bb0d291cf85b8423[m
+Author: AlexShrestha <alex.shrestha88@gmail.com>
+Date:   Thu Nov 7 16:38:41 2024 +0000
+
+    Update constants.ts
+
+[33mcommit b4b203602ceda8224fe354df5d7230ac7966737f[m
+Author: Muhammad Hamza <imhumzanadeem@gmail.com>
+Date:   Thu Nov 7 00:05:42 2024 +0500
+
+    update
+
+[33mcommit b6378435f9a26afa85d0be72a3b2199d699d028f[m
+Author: Muhammad Hamza <imhumzanadeem@gmail.com>
+Date:   Thu Nov 7 00:02:29 2024 +0500
+
+    update
+
+[33mcommit 9e5335259860ce93cca0bd172a46a2c26c472807[m
+Author: AlexShrestha <alex.shrestha88@gmail.com>
+Date:   Wed Nov 6 14:41:28 2024 +0000
+
+    Update constants.ts
+
+[33mcommit 43998ea7df7bc10d2f9f3bd2d5440226247e8ec1[m
+Author: AlexShrestha <alex.shrestha88@gmail.com>
+Date:   Wed Nov 6 14:05:25 2024 +0000
+
+    Update constants.ts
+
+[33mcommit ea16604198b13d6d96566d9606927c096572ca61[m
+Author: AlexShrestha <alex.shrestha88@gmail.com>
+Date:   Wed Nov 6 10:31:46 2024 +0000
+
+    Add new icons for updated interface
+
+[33mcommit 677b3cb5957d18f0a86a4e49d1077accdbf18224[m
+Author: AlexShrestha <alex.shrestha88@gmail.com>
+Date:   Wed Nov 6 09:08:42 2024 +0000
+
+    Update logo_for_light.png with new image
+
+[33mcommit e6e3d710052f8cdff8e8aae68d5620c15e407bd7[m
+Author: AlexShrestha <alex.shrestha88@gmail.com>
+Date:   Wed Nov 6 08:48:34 2024 +0000
+
+    Update logo_for_light.png
+
+[33mcommit 27b87bf938c4e8e5d1043fca357cc230936ccd25[m
+Author: AlexShrestha <alex.shrestha88@gmail.com>
+Date:   Wed Nov 6 00:21:08 2024 +0000
+
+    Your commit message
+
+[33mcommit c85892677296fa6ce8e60bc9a2d1cf5bee56e343[m
+Author: AlexShrestha <alex.shrestha88@gmail.com>
+Date:   Wed Nov 6 00:09:05 2024 +0000
+
+    Your commit message
+
+[33mcommit 955e23bd40ec5a3e831af8a17de1cf65212030b2[m
+Author: AlexShrestha <alex.shrestha88@gmail.com>
+Date:   Tue Nov 5 14:47:00 2024 +0000
+
+    Regenerate pnpm-lock.yaml to match package.json
+
+[33mcommit fd863e28aac071ed4e41b1d9ff51a9de75f61cd7[m
+Author: AlexShrestha <alex.shrestha88@gmail.com>
+Date:   Wed Nov 6 00:56:11 2024 +0100
+
+    Update logo_for_light.png
+
+[33mcommit 1629e05c4a1db0dc53b73e78dc75c3068f642600[m
+Author: AlexShrestha <alex.shrestha88@gmail.com>
+Date:   Tue Nov 5 14:37:57 2024 +0000
+
+    Update pnpm-lock.yaml and other changes for deployment
+
+[33mcommit 5c6b11c5948a994b54b26abb3c441867af62d8c5[m
+Author: AlexShrestha <alex.shrestha88@gmail.com>
+Date:   Mon Nov 4 14:28:00 2024 +0100
+
+    Initial commit
