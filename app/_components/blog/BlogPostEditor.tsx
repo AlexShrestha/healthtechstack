@@ -62,7 +62,7 @@ const BlogPostFormSchema = z.object({
 	description: z
 		.string()
 		.min(100, { message: 'Should be at least 100 characters long' }),
-	topic_id: z.string().min(2, { message: 'Category is missing.' }),
+	// topic_id: z.string().min(2, { message: 'Category is missing.' }),
 	content: z
 		.string()
 		.min(100, { message: 'Should be at least 100 characters long' }),
@@ -105,7 +105,7 @@ export default function BlogPostEditor({
 			title: post?.title ?? '',
 			description: post?.description ?? '',
 			content: post?.content ?? '',
-			topic_id: post?.topic_id ?? '',
+			// topic_id: post?.topic_id ?? '',
 			is_user_published: post?.is_user_published ?? false,
 			is_admin_approved: post?.is_admin_approved ?? false,
 			default_image_url: post?.default_image_url ?? '',
@@ -430,7 +430,7 @@ export default function BlogPostEditor({
 									</FormItem>
 								)}
 							/>
-							<FormField
+							{/* <FormField
 								control={form.control}
 								name="topic_id"
 								render={({ field }) => (
@@ -458,7 +458,7 @@ export default function BlogPostEditor({
 										<FormMessage />
 									</FormItem>
 								)}
-							/>
+							/> */}
 
 							<FormField
 								control={form.control}

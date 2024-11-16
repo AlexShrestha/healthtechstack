@@ -161,8 +161,8 @@ export default function Navbar_Public() {
 									+ Submit a Business
 								</Link>
 
-								<div className="pointer-events-auto border-gray-500 flex flex-nowrap items-center justify-end">
-									<ModeToggle />
+								<div className="pointer-events-auto border-gray-500 flex flex-nowrap items-center justify-end ms-2">
+									{/* <ModeToggle /> */}
 									{GENERAL_SETTINGS.USE_PUBLISH && (
 										<>
 											<Link

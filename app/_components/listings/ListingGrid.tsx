@@ -3,50 +3,46 @@
 // Import Types
 import { ListingType } from '@/supabase-special-types';
 // Import External Packages
+import { useState } from 'react';
 // Import Components
 import { Alert, AlertTitle, AlertDescription } from '@/ui/Alert';
 import ListingCard from '@/components/listings/ListingCard';
-import Pagination from '@/ui/Pagination';
 import { Input } from '@/ui/Input';
-// Import Functions & Actions & Hooks & State
-import usePagination from '@/lib/usePagination';
-import useClientAuth from '@/lib/useClientAuth';
+import { Button } from '@/ui/Button';
 // Import Data
 // Import Assets & Icons
 import { AlertCircle } from 'lucide-react';
+import useClientAuth from '@/app/_lib/useClientAuth';
 
 export default function ListingGrid({
 	listings,
 	maxCols,
-	showPagination,
 	initialItemsPerPage,
 	showSearch = true,
 }: {
 	listings: ListingType[];
 	maxCols: number;
-	showPagination?: boolean;
 	initialItemsPerPage: number;
 	showSearch?: boolean;
 }) {
-	const {
-		currentData,
-		currentPage,
-		totalPages,
-		itemsPerPage,
-		paginateBack,
-		paginateFront,
-		paginateBackFF,
-		paginateFrontFF,
-		setItemsPerPage,
-		setSearchTerm,
-	} = usePagination({
-		initialItemsPerPage: initialItemsPerPage || maxCols * 2,
-		data: listings,
-		searchField: 'title',
-	});
+	const [visibleItems, setVisibleItems] = useState<number>(
+		initialItemsPerPage || maxCols * 2
+	);
+	const [searchTerm, setSearchTerm] = useState<string>('');
 
-	const { userObject: user } = useClientAuth({});
+	// Filtered data based on search term
+	const filteredData = listings.filter((listing) =>
+		listing.title.toLowerCase().includes(searchTerm.toLowerCase())
+	);
 
+	// Displayed data
+	const currentData = filteredData.slice(0, visibleItems);
+
+	// Handle Load More
+	const handleLoadMore = () => {
+		setVisibleItems((prev) => Math.min(prev + maxCols * 2, filteredData.length));
+	};
+	const { userObject: user } = useClientAuth({})
 	return (
 		<>
 			{listings.length === 0 ? (
@@ -85,28 +81,20 @@ export default function ListingGrid({
 							</AlertDescription>
 						</Alert>
 					) : (
-						<div
-							className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-8 lg:grid-cols-${maxCols.toString()} w-full`}
-						>
-							{currentData.map((listing) => (
-								<ListingCard key={listing.slug} listing={listing} user={user} />
-							))}
-						</div>
-					)}
-					{showPagination && (
-						<Pagination
-							itemsPerPage={itemsPerPage}
-							totalItems={listings.length}
-							paginateBack={paginateBack}
-							paginateFront={paginateFront}
-							paginateBackFF={paginateBackFF}
-							paginateFrontFF={paginateFrontFF}
-							currentPage={currentPage}
-							totalPages={totalPages}
-							setItemsPerPage={setItemsPerPage}
-							pageSizeOptions={[maxCols * 2, maxCols * 4, maxCols * 8]}
-							nameOfItems="listings"
-						/>
+						<>
+							<div
+								className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-8 lg:grid-cols-${maxCols.toString()} w-full`}
+							>
+								{currentData.map((listing) => (
+									<ListingCard key={listing.slug} listing={listing} user={user} />
+								))}
+							</div>
+							{visibleItems < filteredData.length && (
+								<div className="flex justify-center mt-6">
+									<Button onClick={handleLoadMore}>Load More</Button>
+								</div>
+							)}
+						</>
 					)}
 				</>
 			)}

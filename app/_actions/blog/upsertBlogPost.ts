@@ -29,7 +29,7 @@ const BlogPostFormSchema = z.object({
 	description: z
 		.string()
 		.min(100, { message: 'Should be at least 100 characters long' }),
-	topic_id: z.string().min(2, { message: 'Category is missing.' }),
+	// topic_id: z.string().min(2, { message: 'Category is missing.' }),
 	content: z
 		.string()
 		.min(100, { message: 'Should be at least 100 characters long' }),

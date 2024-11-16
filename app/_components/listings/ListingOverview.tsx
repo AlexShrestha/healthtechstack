@@ -122,13 +122,13 @@ async function OverviewGrid({
 					? valueA === valueB
 						? 0
 						: valueA
-						? -1
-						: 1
+							? -1
+							: 1
 					: valueA === valueB
-					? 0
-					: valueA
-					? 1
-					: -1;
+						? 0
+						: valueA
+							? 1
+							: -1;
 			}
 
 			// Example: Sort by string fields
@@ -163,7 +163,7 @@ async function OverviewGrid({
 		<ListingGrid
 			listings={listings}
 			maxCols={maxCols}
-			showPagination={showPagination}
+			// showPagination={showPagination}
 			initialItemsPerPage={itemsPerPage}
 			showSearch={showSearch}
 		/>
@@ -221,7 +221,7 @@ export default function ListingOverview({
 			: undefined;
 	const sortBy =
 		SORT_DIRECTIONS.find(
-			(direction) => direction.value === filterAndSortParams?.sort ?? ''
+			(direction) => direction.value === (filterAndSortParams?.sort ?? '')
 		) || SORT_DIRECTIONS[0];
 
 	return (

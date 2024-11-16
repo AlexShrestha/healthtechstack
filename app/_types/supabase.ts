@@ -103,7 +103,7 @@ export type Database = {
           published_at: string | null
           slug: string
           title: string
-          topic_id: string | null
+          // topic_id: string | null
           updated_at: string | null
           user_id: string | null
         }
@@ -120,7 +120,7 @@ export type Database = {
           published_at?: string | null
           slug: string
           title: string
-          topic_id?: string | null
+          // topic_id?: string | null
           updated_at?: string | null
           user_id?: string | null
         }
@@ -137,18 +137,18 @@ export type Database = {
           published_at?: string | null
           slug?: string
           title?: string
-          topic_id?: string | null
+          // topic_id?: string | null
           updated_at?: string | null
           user_id?: string | null
         }
         Relationships: [
-          {
-            foreignKeyName: "blog_posts_topic_id_fkey"
-            columns: ["topic_id"]
-            isOneToOne: false
-            referencedRelation: "topics"
-            referencedColumns: ["id"]
-          },
+          // {
+          //   foreignKeyName: "blog_posts_topic_id_fkey"
+          //   columns: ["topic_id"]
+          //   isOneToOne: false
+          //   referencedRelation: "topics"
+          //   referencedColumns: ["id"]
+          // },
           {
             foreignKeyName: "blog_posts_user_id_fkey"
             columns: ["user_id"]
